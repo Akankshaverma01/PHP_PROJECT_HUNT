@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="simple conatct php/style.css">
+</head>
+<body style="background-image: url('pexels-photo-7396896.jpeg');background-blend-mode:lighten;">
+    <div class="container">
+        <h1><img src="OIP (1).jpg" width="50px">Contact Form</h1>
+        <p>Contact me by filling this form.</p>
+
+        <form method="post" action="simple contact php/mail.php">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" minlength="2" maxlength="50"><br><br>
+            
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+
+
+
+    </div>
+</body>
+</html>
+
+
